@@ -1,0 +1,24 @@
+{
+  "name": "untitled6",
+  "$schema": "node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "src",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "untitled6:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "untitled6:build:development"
+        },
+        "production": {
+          "buildTarget": "untitled6:build:production"
+        }
+      }
+    }
+  },
+  "tags": []
+}
